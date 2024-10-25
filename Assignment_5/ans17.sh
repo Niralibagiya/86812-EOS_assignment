@@ -1,8 +1,8 @@
+#!/bin/bash
 
-
-for((i=1;i<=num;i++))
+for i in {1..5}
 do
-	for((j=1;j<=i;j++))
+	for j in $(seq 1 $i)
 	do
 		echo -n "*"
 	done
